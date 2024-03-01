@@ -1,0 +1,41 @@
+.login-image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2px;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.login_container {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.welcome_msg {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+    opacity: 90%;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    font-stretch: semi-condensed;
+    border-color: #ccc;
+    /* padding: 1px; */
+}
+
+.login_container:hover {
+    opacity: 2;
+}
+
+.bg_img {
+    background-image: url('/assets/bannergif.gif');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+}

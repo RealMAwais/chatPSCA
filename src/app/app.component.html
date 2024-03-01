@@ -1,0 +1,15 @@
+<nav class="navbar navbar_bg" *ngIf="isHomePage()">
+    <div class="container-md">
+        <img src="assets/pscalogo.png" class="main-logo">
+    </div>
+    <div class="mat-button">
+        <button mat-fab color="primary"  title="Exit" (click)="logOut()">Logout</button>
+    </div>
+</nav>
+
+
+
+<ngx-ui-loader></ngx-ui-loader>
+<button mat-flat-button color="primary" class="logout-button" *ngIf="!isHomePage()" [hidden]="isLoginPage()"
+    title="Logout" (click)="logOut()"><i class="bi bi-door-closed p-1"></i>Logout</button>
+<router-outlet></router-outlet>
